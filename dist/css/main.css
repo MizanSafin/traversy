@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-perspective: preserve-3d;
+          perspective: preserve-3d;
+}
+
+.wrapper {
+  background-color: #3a3a3a;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label {
+  position: relative;
+  width: 150px;
+  height: 55px;
+  background: #cdcee1;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 6px #000;
+          box-shadow: 2px 3px 6px #000;
+  margin-top: 30px;
+}
+
+label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+label span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 6px solid #d4d4af;
+  border-radius: 16px;
+  width: 75px;
+  height: 55px;
+  background: #3a3a3a;
+  cursor: pointer;
+  -webkit-box-shadow: inset 2px 1px 4px #000;
+          box-shadow: inset 2px 1px 4px #000;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+label input:checked ~ span {
+  left: 75px;
+}
+
+label span ion-icon {
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+label input:checked ~ span ion-icon {
+  color: white;
+  -webkit-filter: drop-shadow(0, 0, 5px, #fff) drop-shadow(0, 0, 5px, #fff) drop-shadow(0, 0, 5px, #fff);
+          filter: drop-shadow(0, 0, 5px, #fff) drop-shadow(0, 0, 5px, #fff) drop-shadow(0, 0, 5px, #fff);
+}
+
+.bulb {
+  width: 348px;
+  height: 408px;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  background: url("/img/bulb_off.jpg");
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 2s linear;
+  transition: 2s linear;
+}
+
+label input:checked ~ .bulb {
+  background: url("/img/bulb_on.jpg");
+}
+
+.wrapper_2 {
+  width: 90%;
+  padding: 20px;
+  min-height: 50vh;
+  margin: auto;
+  background-color: green;
+}
+
+.text {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  font-size: 35px;
+  font-family: " tahoma",sans-serif;
+  text-align: center;
+  color: chartreuse;
+  -webkit-box-shadow: 2px 1px 6px 10px red;
+          box-shadow: 2px 1px 6px 10px red;
+  -webkit-filter: drop-shadow(1px 2px 4px #ff0000);
+          filter: drop-shadow(1px 2px 4px #ff0000);
+}
+/*# sourceMappingURL=main.css.map */

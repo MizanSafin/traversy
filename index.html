@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git and GitHub</title>
+    <title>balb on And off</title>
+    <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
-    <h1>hello world to git and GitHub</h1>
-    id form
+   <div class="wrapper">
+    <label>
+        <input type="checkbox">
+        <span onclick="document.querySelector('.wrapper').style.backgroundColor='#cdced1';" ondblclick="document.querySelector('.wrapper').style.backgroundColor='#333';"><ion-icon name="bulb-outline"></ion-icon></span>
+        <div class="bulb"></div>
+    </label>
+   </div>
+    <div class="wrapper_2">
+        <div onmouseenter="document.querySelector('.wrapper_2').style.backgroundColor='darkblue';" class="text" onmouseleave="document.querySelector('.wrapper_2').style.backgroundColor='cornflowerblue';">
+            <h1>Sadman</h1>
+            <h1>Safin</h1>
+            <h2>BirthDate: 7-2-2022</h2>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>
